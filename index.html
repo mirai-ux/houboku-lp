@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひとと向き合うとはどういうことか | 抱樸 × 越境学習プログラム</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('main-visual.JPG');
+            background-size: cover;
+            background-position: center;
+        }
+        /* タイムラインのスタイル調整 */
+        .timeline-line {
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #e2e8f0;
+            z-index: 0;
+        }
+        @media (min-width: 640px) {
+            .timeline-line {
+                left: 50%;
+                margin-left: -1px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+
+    <header class="hero-bg h-screen flex items-center text-white px-4">
+        <div class="max-w-6xl mx-auto w-full flex justify-start">
+            <div class="max-w-3xl text-left">
+                <p class="text-sm md:text-base font-bold tracking-widest mb-6 uppercase text-yellow-400 border-b-2 border-yellow-400 inline-block pb-1">認定NPO法人抱樸 × 越境イニシアチブ</p>
+                
+                <h1 class="text-4xl md:text-7xl font-bold mb-8 leading-relaxed">
+                    ひとと向き合うとは<br>どういうことか
+                </h1>
+                <p class="text-xl md:text-2xl mb-6 font-bold leading-relaxed">
+                    貴社のマネージャーに、「共感」という原体験を。
+                </p>
+                <p class="text-base md:text-lg mb-10 text-gray-100 leading-relaxed">
+                    北九州で生活困窮者支援を行う抱樸（ほうぼく）。その現場への越境が、<br class="hidden md:block">
+                    マネージャーの意識を変革し、共感性の高い組織づくりへと導く。
+                </p>
+                <a href="https://forms.gle/ATT1Xyh5judS43hd7" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-10 rounded-full transition duration-300 shadow-lg text-lg transform hover:scale-105" target="_blank">
+                    お問い合わせ / 資料請求
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-4 bg-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-20 text-center leading-relaxed">貴社の組織は、メンバーの<br>「ホーム」になっていますか？</h2>
+            
+            <div class="text-left leading-loose text-lg text-slate-700 space-y-6">
+                <p>
+                    働き方改革、リモートワーク、DXなどにより働く環境は改善されてきました。<br>
+                    しかしマネジメントの現場からは、新たな課題の声が聞こえてきます。
+                </p>
+                <p>
+                    「1on1を導入したが、業務進捗の確認で終わってしまい、本音が引き出せない」<br>
+                    「管理職が業務に追われ、メンバーの内面に関心を持つ余裕がない」<br>
+                    「多様な人材が増える中で、求心力のあるチームビルディングが難しくなっている」
+                </p>
+                <p>
+                    機能と役割だけでつながった組織は、脆く、離職やメンタル不調のリスクを孕みます。<br>
+                    いま組織のマネージャーに必要なのは、新たなフレームワークやスキル研修ではありません。<br>
+                    <strong class="bg-yellow-100 px-1">「ひとと向き合うとは、どういうことか」を根源的に問いなおし、<br>
+                    メンバーが安心して力を発揮できる「ホーム（居場所）」をつくりあげること</strong>です。
+                </p>
+                <p class="font-bold text-slate-900 border-l-4 border-yellow-500 pl-4 mt-8">
+                    本プログラムは、「ひとりにしない」を掲げ、北九州市で35年以上にわたり生活困窮者の支援に取り組んできた<a href="https://www.houboku.net/about/" target="_blank" rel="noopener noreferrer" class="text-yellow-600 underline hover:text-yellow-700">認定NPO法人抱樸</a>の現場に身を置く、越境型のマネジメント研修です。<br>
+                    「アウェイ」で異質な他者と向き合う経験を通じて、マネージャーや次世代リーダーの「人間観・組織観」をアップデートします。
+                </p>
+            </div>
+            
+            <div class="w-full max-w-3xl mx-auto aspect-video mt-12 mb-4">
+                <iframe 
+                    class="w-full h-full rounded-lg shadow-xl"
+                    src="https://www.youtube.com/embed/t_EuN8Opotc?si=fWQ41qmrGEilyqnD" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="text-sm text-gray-500 text-center">※抱樸の活動紹介動画（Youtube）</p>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 relative">
+        <div class="absolute inset-0 z-0" style="background-image: url('image1.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="absolute inset-0 bg-slate-900/80 z-0"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10 text-white">
+            <h2 class="text-3xl font-bold mb-20 text-center leading-relaxed">本プログラムがもたらす効果<br>〜多様性が活きた、エンゲージメントの高い組織づくりへ〜</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-8 rounded-xl border border-white/20 backdrop-blur-sm transition hover:bg-white/10">
+                    <div class="text-5xl font-bold text-yellow-400 mb-6">01</div>
+                    <h3 class="text-xl font-bold mb-4">「スキル」から<br>「スタンス」へ</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        小手先の対話スキルではなく、リーダーとしての「在り方（スタンス）」を問います。数千人の人生と向き合ってきた奥田知志氏や抱樸の関係者、当事者との対話を通じて、メンバーと信頼関係を築くための人間観を養います。
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl border border-white/20 backdrop-blur-sm transition hover:bg-white/10">
+                    <div class="text-5xl font-bold text-yellow-400 mb-6">02</div>
+                    <h3 class="text-xl font-bold mb-4">「管理」から<br>「共感」へ</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        ビジネスの常識が通用しないアウェイな環境で、他者と協働するにはどうすればよいのか。バックグラウンドも価値観も違う相手とわかりあうことはできるのか。そのような問いと向き合い、多様なメンバーを包摂する力を高めます。
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl border border-white/20 backdrop-blur-sm transition hover:bg-white/10">
+                    <div class="text-5xl font-bold text-yellow-400 mb-6">03</div>
+                    <h3 class="text-xl font-bold mb-4">「組織」を<br>「ホーム」へ</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        自組織を、メンバーが安心して力を発揮できる「ホーム」に変える。そのためには、まず自分自身にとっての「ホーム」とは何かが定まらなくてはなりません。内省や対話を通じて自分なりの哲学を持つことがはじめの一歩となります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center text-slate-900 leading-relaxed">講師・ファシリテーター</h2>
+            
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm flex flex-col md:flex-row gap-8 items-start mb-8">
+                <div class="w-full md:w-1/4 flex-shrink-0">
+                    <img src="okuda.jpg" alt="奥田知志" class="w-full h-auto rounded-lg object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <div class="w-full md:w-3/4">
+                    <h3 class="text-2xl font-bold mb-1">奥田 知志 <span class="text-sm font-normal text-gray-500 ml-2">Tomoshi Okuda</span></h3>
+                    <p class="text-yellow-600 font-bold text-sm mb-4">認定NPO法人抱樸 理事長 / 東八幡キリスト教会 牧師</p>
+                     <div class="leading-relaxed text-gray-700 text-justify space-y-4">
+                        <p>
+                            1963年生まれ。関西学院大学神学部修士課程、西南学院大学神学部専攻科をそれぞれ卒業。九州大学大学院博士課程後期単位取得。1990年、東八幡キリスト教会牧師として赴任。同時に、学生時代から始めていた「ホームレス支援」に、赴任地の北九州でも参加。事務局長等を経て、北九州ホームレス支援機構（現 抱樸）の理事長に就任。これまでに3700人以上のホームレスの人々の自立を支援。その他、共生地域創造財団代表理事、全国居住支援法人協議会共同代表、国の審議会等の役職も歴任。第19回糸賀一雄記念賞受賞など多数の表彰を受ける。ＮＨＫのドキュメンタリー番組「プロフェッショナル仕事の流儀」にも2度取り上げられ、著作も多数と広範囲に活動を広げている。
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            著書：「わたしがいる あなたがいる なんとかなる『希望のまち』のつくりかた」（西日本新聞社）、「『逃げおくれた』伴走者」(本の種出版)、「助けてと言える国へ」（茂木健一郎氏共著・集英社新書）、「ユダよ、帰れ」（新教出版社）、「伴走型支援」(有斐閣)等
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm flex flex-col md:flex-row gap-8 items-start">
+                <div class="w-full md:w-1/4 flex-shrink-0">
+                    <img src="miraiharada.jpg" alt="原田未来" class="w-full h-auto rounded-lg object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
+                <div class="w-full md:w-3/4">
+                    <h3 class="text-2xl font-bold mb-1">原田 未来 <span class="text-sm font-normal text-gray-500 ml-2">Mirai Harada</span></h3>
+                    <p class="text-yellow-600 font-bold text-sm mb-4">一般社団法人越境イニシアチブ 代表理事</p>
+                        <div class="leading-relaxed text-gray-700 text-justify space-y-4">
+                        <p>
+                            1977年生まれ、千葉県出身。立教大学文学部卒業。大学院大学至善館修了、MBA(経営学修士)。
+                            2001年、株式会社ラクーン（現ラクーンホールディングス、東証プライム）入社。部門長職を歴任し同社の上場に貢献。2014年、株式会社カカクコムに転職し、新規事業開発。自身の経験から「会社を辞めずに外を見る経験」の重要性に気づき、「レンタル移籍」事業を構想。2015年に株式会社ローンディールを創業、NTTグループ・トヨタグループ各社・官公庁など、大企業のべ150社が活用する越境のプラットフォームを構築。経団連スタートアップエコシステム変革タスクフォース、経済産業省の人材流動化促進政策等の委員を務める。2025年にローンディール代表を退任し、より広く「越境を社会に実装する」ために一般社団法人越境イニシアチブを設立。著書『越境人材---個人の葛藤、組織の揺らぎを変革の力に変える』（英治出版）を2025年9月に上梓。
+                        </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-full mb-8">事前対談アーカイブ</span>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-slate-900 leading-relaxed">
+                行動を促す、人との向き合い方とは
+            </h2>
+            <p class="text-slate-600 mb-10">
+                認定NPO法人抱樸 理事長 奥田知志 × 越境イニシアチブ 原田未来
+            </p>
+            
+            <div class="w-full max-w-3xl mx-auto aspect-video mb-6">
+                <iframe 
+                    class="w-full h-full rounded-lg shadow-xl"
+                    src="https://www.youtube.com/embed/QF1KAbVGdZo" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 bg-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-3xl font-bold mb-20 text-center text-slate-900 leading-relaxed">
+                プログラム構成
+                <span class="block text-sm font-normal text-gray-400 mt-4">ホーム（自組織）とアウェイ（現場）を往還し、学びを定着させる</span>
+            </h2>
+            
+            <div class="space-y-12 relative">
+                <div class="timeline-line hidden sm:block"></div>
+
+                <div class="relative flex flex-col sm:flex-row items-center sm:items-start group">
+                    <div class="w-full sm:w-1/2 sm:pr-8 sm:text-right order-2 sm:order-1 mt-4 sm:mt-0">
+                        <h3 class="text-xl font-bold text-slate-900">事前研修（オンライン）</h3>
+                        <p class="text-yellow-600 font-bold text-sm mb-2">現地訪問の2週間前 / 1.5時間</p>
+                        <p class="text-slate-600 text-sm">参加者同士の関係構築と、抱樸の活動への理解を深めます。また「自分にとって、チームというホームとは何か？」という初期仮説を持ちます。</p>
+                    </div>
+                    <div class="z-10 bg-yellow-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shadow-md order-1 sm:order-2">01</div>
+                    <div class="w-full sm:w-1/2 sm:pl-8 order-3"></div>
+                </div>
+
+                <div class="relative flex flex-col sm:flex-row items-center sm:items-start group">
+                    <div class="w-full sm:w-1/2 sm:pr-8 order-3 sm:order-1"></div>
+                    <div class="z-10 bg-slate-800 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shadow-md order-1 sm:order-2">02</div>
+                    <div class="w-full sm:w-1/2 sm:pl-8 mt-4 sm:mt-0 order-2 sm:order-3">
+                        <h3 class="text-xl font-bold text-slate-900">現地プログラム Day 1</h3>
+                        <p class="text-yellow-600 font-bold text-sm mb-2">9:00 - 24:00 ※途中休憩・懇親会あり</p>
+                        <div class="bg-gray-50 p-4 rounded-lg text-sm text-slate-700 space-y-2">
+                            <p><span class="font-bold">午前：</span>現場視察、炊き出し準備（ボランティア体験）、元野宿当事者との座談会</p>
+                            <p><span class="font-bold">午後：</span>奥田氏との対話（ホームとは、ひとと向き合うとは）、スタッフとの1on1</p>
+                            <p><span class="font-bold">夜間：</span>炊き出し本番、深夜パトロール（夜回り）</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col sm:flex-row items-center sm:items-start group">
+                    <div class="w-full sm:w-1/2 sm:pr-8 sm:text-right order-2 sm:order-1 mt-4 sm:mt-0">
+                        <h3 class="text-xl font-bold text-slate-900">現地プログラム Day 2</h3>
+                        <p class="text-yellow-600 font-bold text-sm mb-2">10:00 - 15:00</p>
+                        <div class="bg-gray-50 p-4 rounded-lg text-sm text-slate-700 text-left sm:text-right space-y-2">
+                            <p><span class="font-bold">午前：</span>内省、Day1の振り返り共有、奥田氏との対話（共感とは何か）</p>
+                            <p><span class="font-bold">午後：</span>リフレクション、自組織における行動宣言</p>
+                        </div>
+                    </div>
+                    <div class="z-10 bg-slate-800 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shadow-md order-1 sm:order-2">03</div>
+                    <div class="w-full sm:w-1/2 sm:pl-8 order-3"></div>
+                </div>
+
+                <div class="relative flex flex-col sm:flex-row items-center sm:items-start group">
+                    <div class="w-full sm:w-1/2 sm:pr-8 order-3 sm:order-1"></div>
+                    <div class="z-10 bg-yellow-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shadow-md order-1 sm:order-2">04</div>
+                    <div class="w-full sm:w-1/2 sm:pl-8 mt-4 sm:mt-0 order-2 sm:order-3">
+                        <h3 class="text-xl font-bold text-slate-900">事後研修（オンライン）</h3>
+                        <p class="text-yellow-600 font-bold text-sm mb-2">現地訪問の2週間後 / 1.5時間</p>
+                        <p class="text-slate-600 text-sm">ホーム（自組織）に戻って実践したことを共有し、対話を通じてさらなる進化に向けた方向づけを行います。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-80 md:h-[500px] relative">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <img src="01_houboku.jpg" alt="抱樸の活動風景" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <p class="text-white text-2xl md:text-4xl font-bold tracking-widest drop-shadow-md px-4 text-center">現場でしか、見えないものがある。</p>
+        </div>
+    </section>
+
+  <section class="py-24 px-4 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+            <div class="absolute -top-20 -left-20 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute -bottom-20 -right-20 w-96 h-96 bg-slate-300 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h2 class="text-3xl font-bold mb-20 text-center text-slate-900 leading-relaxed">
+                参加者の声
+                <span class="block text-sm font-normal text-gray-400 mt-4">参加したリーダーたちの言葉</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+                    <div class="mb-6 flex items-center">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center text-slate-500 font-bold text-lg mr-4">K</div>
+                        <div>
+                            <p class="font-bold text-slate-900">ベンチャー経営者</p>
+                            <p class="text-xs text-slate-500">IT・サービス業</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4 text-slate-800">頭での理解を超えた<br>「感情の揺らぎ」</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">
+                        「多様性を頭では理解していましたが、現場で『受け入れがたい』と感じる正直な自分にも気づきました。その感情の揺れ幅が、単なる知識ではない深い経験の表れでした。『ホームとは何か』を問い直す、得難い経験となりました。」
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+                    <div class="mb-6 flex items-center">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center text-slate-500 font-bold text-lg mr-4">J</div>
+                        <div>
+                            <p class="font-bold text-slate-900">事業責任者</p>
+                            <p class="text-xs text-slate-500">人材サービス業</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4 text-slate-800">1on1の手前にある<br>「人間としての共感」</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">
+                        「ビジネス上の対話スキルとしての傾聴の手前に、利害関係のない『雑談』や『共感不可能性の共感』があることに気づかされました。目の前で起きていることを解釈しながら、奥田さんの言葉によって深まり、腹落ちしていく感覚がありました。」
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+                    <div class="mb-6 flex items-center">
+                        <div class="w-12 h-12 bg-slate-300 rounded-full flex items-center justify-center text-slate-500 font-bold text-lg mr-4">O</div>
+                        <div>
+                            <p class="font-bold text-slate-900">マネージャー</p>
+                            <p class="text-xs text-slate-500">地方創生支援業</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-4 text-slate-800">「私」を主語にする<br>責任と覚悟</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">
+                        「『仕事』や『会社』という大きな主語で語ることで、無意識に責任から逃れていた自分にハッとしました。『私はどうしたいか』。管理された日常から離れ、一人の人間として他者と向き合うことで、リーダーとしての在り方、人との向き合い方を考えさせられました。」
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center leading-relaxed">2026年の開催概要</h2>
+            <div class="grid md:grid-cols-2 gap-12 text-lg">
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-yellow-500 text-sm font-bold uppercase tracking-wider mb-2">TARGET</h4>
+                        <p class="text-2xl font-bold">組織のリーダーおよび<br>ミドルマネージャー</p>
+                        <p class="text-sm text-gray-400 mt-2">※組織の規模は問いません。</p>
+                    </div>
+                    <div>
+                        <h4 class="text-yellow-500 text-sm font-bold uppercase tracking-wider mb-2">SCHEDULE</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="block text-sm text-gray-400">第2回</span>
+                                <p class="text-xl font-bold">2026年 7月10日(金) 〜 11日(土)</p>
+                            </div>
+                            <div>
+                                <span class="block text-sm text-gray-400">第3回</span>
+                                <p class="text-xl font-bold">2026年 10月23日(金) 〜 24日(土)</p>
+                            </div>
+                            <p class="text-sm text-gray-400 mt-2">※いずれも前日夜に小倉駅周辺にて懇親会を開催します。<br>※現地日程の前後2週間でオンライン研修（各1.5h）を実施します。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-yellow-500 text-sm font-bold uppercase tracking-wider mb-2">CAPACITY</h4>
+                        <p class="text-xl">各回 最大9名<br><span class="text-sm text-gray-400 font-normal">※最少催行人数 5名<br>※多様性を重視するため、1社からの参加は3名まで。</span></p>
+                    </div>
+                    <div>
+                        <h4 class="text-yellow-500 text-sm font-bold uppercase tracking-wider mb-2">FEE</h4>
+                        <p class="text-xl">1名 180,000円（税別）<br><span class="text-sm text-gray-400 font-normal">※現地までの交通費・宿泊費は別途ご負担となります。</span></p>
+                    </div>
+                    <div>
+                        <h4 class="text-yellow-500 text-sm font-bold uppercase tracking-wider mb-2">LOCATION</h4>
+                        <p class="text-xl">福岡県北九州市<br><span class="text-base text-gray-300">東八幡キリスト教会・抱樸館 他</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-4 bg-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-20 text-center leading-relaxed">貴社のリーダーに、「共感」という原体験を。<br>まずはプログラムの詳細をご確認ください。</h2>
+            <a href="https://forms.gle/ATT1Xyh5judS43hd7" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-5 px-16 rounded-full transition duration-300 text-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1" target="_blank">
+                お問い合わせフォームへ
+            </a>
+            <p class="mt-8 text-sm text-slate-400">
+                ※お問合せフォームが開きます。<br>
+                フォームが開かない場合は認定NPO法人抱樸「ひとと向き合うマネジメント研修」事務局：<br>npo@houboku.net まで直接ご連絡ください。
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-10 text-center text-sm text-slate-500 border-t border-gray-200">
+        <p>&copy; 2026 認定NPO法人抱樸 / 一般社団法人越境イニシアチブ</p>
+    </footer>
+
+</body>
+</html>
